@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  
+  <!-- <a class="navbar-brand" href="#">DeepCart</a> -->
+  <img src="./assets/images/DeepCart.PNG"> 
+  <form class="form-inline my-2 my-lg-0" style="padding-left: 20px;">
+      <input class="form-control mr-lg-2" style="width: 600px;"  type="search" placeholder="Search for product, brand and more" aria-label="Search">
+      
+    </form>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" style="padding-left: 150px;" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link navbar-text"  (click)="open()" href="#"><b>Login & Signup</b></a>
+      </li>
+      <div class="btn-group mr-3">
+          <button type="button" class="btn btn-primary"><b>More</b></button>
+          <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+            <button class="btn btn-primary dropdown-toggle-split" ngbDropdownToggle></button>
+            <div class="dropdown-menu" ngbDropdownMenu>
+              <button class="dropdown-item">One</button>
+              <button class="dropdown-item">Two</button>
+              <button class="dropdown-item">Four!</button>
+            </div>
+          </div>
+        </div>
+      <li class="nav-item active">
+          <a class="nav-link" href="#"><b>Cart</b></a>
+        </li>
+    </ul>
+  </div>
+</nav>
+<pre>{{closeResult}}</pre>
+<!--  Model Code End -->
+<router-outlet></router-outlet>
